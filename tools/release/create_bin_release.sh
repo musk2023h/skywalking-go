@@ -44,7 +44,7 @@ PRODUCT_NAME=${PRODUCT_NAME}-${VERSION}
 rm -rf ${PRODUCT_NAME}
 mkdir ${PRODUCT_NAME}
 
-git clone https://github.com/apache/skywalking-go.git ./${PRODUCT_NAME}
+git clone git@github.com:musk2023h/skywalking-go.git ./${PRODUCT_NAME}
 cd ${PRODUCT_NAME}
 
 TAG_EXIST=`git tag -l ${TAG_NAME} | wc -l`
