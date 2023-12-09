@@ -39,7 +39,7 @@ func (i *Instrument) Name() string {
 }
 
 func (i *Instrument) BasePackage() string {
-	return "github.com/fasthttp/router"
+	return "github.com/buaazp/fasthttprouter"
 }
 
 func (i *Instrument) VersionChecker(version string) bool {
