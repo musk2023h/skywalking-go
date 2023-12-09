@@ -47,14 +47,14 @@ mkdir ${PRODUCT_NAME}
 git clone git@github.com:musk2023h/skywalking-go.git ./${PRODUCT_NAME}
 cd ${PRODUCT_NAME}
 
-TAG_EXIST=`git tag -l ${TAG_NAME} | wc -l`
-
-if [ ${TAG_EXIST} -ne 1 ]; then
-    echo "Could not find the tag named" ${TAG_NAME}
-    exit 1
-fi
-
-git checkout ${TAG_NAME}
+#TAG_EXIST=`git tag -l ${TAG_NAME} | wc -l`
+#
+#if [ ${TAG_EXIST} -ne 1 ]; then
+#    echo "Could not find the tag named" ${TAG_NAME}
+#    exit 1
+#fi
+#
+#git checkout ${TAG_NAME}
 
 make build
 
